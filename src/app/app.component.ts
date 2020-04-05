@@ -7,16 +7,7 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'TrackerJob-front';
 
-  applics: Application[];
-
-  constructor(private dataService: DataService){
-
-  }
-
-  ngOnInit(){
-    return this.dataService.getApplications().subscribe(data => this.applics = data);
-  }
 }

@@ -3,4 +3,5 @@ export class Application{
     position: string;
     dateApplied: string;
     location: string;
+    postUrl:string;
 }
