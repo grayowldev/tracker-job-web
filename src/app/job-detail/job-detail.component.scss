@@ -1,0 +1,24 @@
+.tj-job-list{
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    background: yellow;
+    overflow-y: scroll;
+
+}
+
+.tj-job-detail{
+    height: 100%;
+    width: 60%;
+    margin-left: 40%;
+    padding-top: 30px;
+    background: yellowgreen;
+    overflow-y: scroll;
+    text-align: center;
+    display: inline-block;
+}
+
+.tj-job-detail, img{
+    padding-bottom: 20px;
+}
+

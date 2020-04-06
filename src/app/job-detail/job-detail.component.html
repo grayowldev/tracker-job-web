@@ -1,0 +1,38 @@
+<p>job-detail works!</p>
+<div class="tj-job-list">
+    <ng-container *ngFor= 'let job of jobs'>
+        <app-job-box [jobData]="job"></app-job-box>
+    </ng-container>
+    <!-- <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box>
+    <app-job-box></app-job-box> -->
+    
+</div>
+<div class="tj-job-detail">
+    <img src="{{activeJob.imgUrl}}">
+    <h4>{{activeJob.companyName}}</h4>
+    <h3>{{activeJob.position}}</h3>
+    <p>{{activeJob.description}}</p>
+    
+</div>

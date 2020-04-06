@@ -1,0 +1,17 @@
+.container{
+    max-width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+}
+.paired-group .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+.paired-group .input:last-child{
+    margin-right: 0;
+}
+
+#description{
+    height: 200px;
+}

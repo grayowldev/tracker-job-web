@@ -4,4 +4,7 @@ export class Application{
     dateApplied: string;
     location: string;
     postUrl:string;
+    imgUrl:string;
+    positionType:string;
+    description:string;
 }

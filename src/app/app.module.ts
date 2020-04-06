@@ -22,6 +22,8 @@ import { PageHolderComponent } from './page-holder/page-holder.component';
 import { config } from 'rxjs';
 
 import { firebaseConfig } from 'src/environments/fire-config';
+import { JobDetailComponent } from './job-detail/job-detail.component';
+import { JobBoxComponent } from './job-box/job-box.component';
 
 
 const fconfig = firebaseConfig;
@@ -34,7 +36,9 @@ const fconfig = firebaseConfig;
     AddApplicationComponent,
     HomeComponent,
     SidebarComponent,
-    PageHolderComponent
+    PageHolderComponent,
+    JobDetailComponent,
+    JobBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ const fconfig = firebaseConfig;
     HttpClientModule,
     RouterModule.forRoot([
       {path: '', component: PageHolderComponent},
-      {path: 'add-application', component: AddApplicationComponent}
+      {path: 'add-application', component: AddApplicationComponent},
+      {path: 'job-detail', component: JobDetailComponent},
+      {path: 'job-box', component: JobBoxComponent}
     ]),
     AngularFireModule.initializeApp(fconfig),
     AngularFireModule,

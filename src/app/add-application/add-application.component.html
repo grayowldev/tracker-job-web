@@ -1,28 +1,71 @@
-<p>add-application works!</p>
-
 <div class="container-fluid">
     <h2>Add Application</h2>
     <form #applicationForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
         <!-- {{newApplication | json }} -->
-        <div class="form-group">
-            <label for="companyName">Company Name</label>
-            <input type="text" class="form-control" name="companyName" [(ngModel)]="newApplication.companyName" id="companyName" required >
-        </div>
-        <div class="form-group">
-            <label for="position">Position</label>
-            <input type="text" class="form-control" name="position" [(ngModel)]="newApplication.position"  id="position" required>
-        </div>
-        <div class="form-group">
-            <label for="location">Location</label>
-            <input type="text" class="form-control" name="location" [(ngModel)]="newApplication.location" id="location" required>
-        </div>
-        <div class="form-group">
-            <label for="postUrl">Job Posting Url</label>
-            <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+        <div class="container">
+            <div class="paired-group">
+                <div class="form-group input">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" class="form-control" name="companyName" [(ngModel)]="newApplication.companyName" id="companyName" required >
+                </div>
+                <div class="form-group input">
+                    <label for="position">Position</label>
+                    <input type="text" class="form-control" name="position" [(ngModel)]="newApplication.position"  id="position" required>
+                </div>
+            </div>
+            <div class="paired-group">
+                <div class="form-group input">
+                    <label for="postUrl">Position Type</label>
+                    <input type="text" class="form-control" name="positionType" [(ngModel)]="newApplication.positionType" id="positionType" required>
+                </div>
+                <div class="form-group input">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" name="location" [(ngModel)]="newApplication.location" id="location" required>
+                </div>
+            </div>
+            <div class="form-group input">
+                <label for="postUrl">Job Posting Url</label>
+                <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+            </div>
+            <div class="form-group input">
+                <label for="postUrl">Image Url</label>
+                <input type="text" class="form-control" name="imgUrl" [(ngModel)]="newApplication.imgUrl" id="imgUrl" required>
+            </div>
+            <div class="form-group input-lg">
+                <label for="postUrl">Job Description</label>
+                <textarea type="text" class="form-control" name="description" [(ngModel)]="newApplication.description" id="description" required></textarea>
+            </div>
+            <!-- <div class="form-group">
+                <label for="postUrl">Job Posting Url</label>
+                <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="postUrl">Job Posting Url</label>
+                <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="postUrl">Job Posting Url</label>
+                <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="postUrl">Job Posting Url</label>
+                <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="postUrl">Job Posting Url</label>
+                    <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+                </div>
+                <div class="form-group">
+                    <label for="postUrl">Job Posting Url</label>
+                    <input type="text" class="form-control" name="postUrl" [(ngModel)]="newApplication.postUrl" id="postUrl" required>
+                </div>
+            </div> -->
+            
+    
+            <button type="submit" class="btn btn-primary"> Submit Application </button>
         </div>
         
-
-        <button type="submit" class="btn btn-primary"> Submit Application </button>
     </form>
 </div>
 
