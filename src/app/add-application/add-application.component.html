@@ -5,7 +5,7 @@
         <div class="container">
             <div class="paired-group">
                 <div class="form-group input">
-                    <label for="companyName">Company Name</label>
+                    <label for="companyName">Company</label>
                     <input type="text" class="form-control" name="companyName" [(ngModel)]="newApplication.companyName" id="companyName" required >
                 </div>
                 <div class="form-group input">
@@ -34,6 +34,15 @@
             <div class="form-group input-lg">
                 <label for="postUrl">Job Description</label>
                 <textarea type="text" class="form-control" name="description" [(ngModel)]="newApplication.description" id="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="jobState">Application State</label><br>
+            
+                <select required>
+                    <option *ngFor="let state of jobState" [value]='state'>
+                        {{state}}
+                    </option>
+                </select>
             </div>
             <!-- <div class="form-group">
                 <label for="postUrl">Job Posting Url</label>

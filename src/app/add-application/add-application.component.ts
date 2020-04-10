@@ -11,6 +11,15 @@ export class AddApplicationComponent implements OnInit {
 
   newApplication: Application = new Application();
   date:string;
+  jobState:string[] = [
+    'Saved',
+    'In Progress',
+    'Applied',
+    'Phone Call/Email',
+    'Phone Interview',
+    'Interview',
+    'Offer'
+  ]
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
